@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-import dis
-
 
 class CashRegister:
     def __init__(self, discount=0):
@@ -49,26 +47,4 @@ class CashRegister:
         for _ in range (last["quantity"]):
             if self.items:
              self.items.pop()
-  # add items
-  # apply discount
-  # void previous transcation
-  # Attributes: discount,total,items,previious-transactions
-  # method: add_item, apply_discount, void_last_transaction
-
-  # Note: discount is a percentage off of the total cash register price (e.g. a discount of 20 means the customer receives 20% off of their total price). 
-  # Properties
-# Discount:
-# Ensure discount is an integer.
-# Ensure that discount is between 0-100 inclusive.
-# If not print “Not valid discount”.
-# Methods
-# add_item(item, price, quantity)
-# Add price to total.
-# Add item to the items array.
-# Add an object to the previous transactions with the item, price and quantity.
-# apply_discount()
-# Apply discount as percentage off from total.
-# Remove the last item of previous_transaction from array.array, 
-# Ensure price reflects correctly.
-# Ensure items reflects correctly.
-# If no transactions in array print “There is no discount to apply.”void_last_transaction().
+  
